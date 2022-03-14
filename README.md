@@ -1,3 +1,3 @@
-# cfd-python
+# CFDPy
 
-Not Implemented
+Computational Fluid Dynamics for Python
