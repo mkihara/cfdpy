@@ -83,7 +83,7 @@ class spectralMethod1(object):
             np.array: Differentiated states in the wave space.
         """
         dim = np.ndim(u)
-        k_shape = [0]*dim
+        k_shape = [1]*dim
         k_shape[self.axis] = len(self.k)
         k_shape = tuple(k_shape)
         k_expand = self.k.reshape(k_shape)
