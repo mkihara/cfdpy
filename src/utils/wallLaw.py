@@ -7,6 +7,7 @@ def viscousSublayer(yPlus):
 
 
 def logLowRegion(yPlus, kappa=0.41, B=5.2):
+    yPlus = np.where(np.abs(yPlus)>1e-30, yPlus, 1e-30)
     return np.log(yPlus) / kappa + B
 
 
