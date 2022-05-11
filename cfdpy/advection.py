@@ -4,9 +4,9 @@
 import numpy as np
 from scipy.interpolate import CubicSpline
 
-from integrate.lowStorageRungeKuttaMethods import LSRK3
-from derivative.finiteDifferenceMethods import centralFDM, upwindFDM
-from derivative.spectralMethods import spectralMethod1
+from cfdpy.integrate.lowStorageRungeKuttaMethods import LSRK3
+from cfdpy.derivative.finiteDifferenceMethods import centralFDM, upwindFDM
+from cfdpy.derivative.spectralMethods import spectralMethod1
 
 
 class advection(object):

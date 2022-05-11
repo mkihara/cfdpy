@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.sparse.linalg import LinearOperator, cg, gmres, lgmres
 
-from derivative.finiteDifferenceMethods import centralFDM
+from cfdpy.derivative.finiteDifferenceMethods import centralFDM
 
 
 class poisson2(object):

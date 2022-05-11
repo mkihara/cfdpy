@@ -3,9 +3,9 @@
 
 import numpy as np
 
-from integrate.lowStorageRungeKuttaMethods import LSRK3
-from derivative.spectralMethods import spectralMethod1
-from derivative.finiteDifferenceMethods import centralFDM
+from cfdpy.integrate.lowStorageRungeKuttaMethods import LSRK3
+from cfdpy.derivative.spectralMethods import spectralMethod1
+from cfdpy.derivative.finiteDifferenceMethods import centralFDM
 
 
 class burgers1(object):
