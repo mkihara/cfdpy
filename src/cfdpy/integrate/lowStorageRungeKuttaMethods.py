@@ -3,13 +3,13 @@
 
 import numpy as np
 
-from .RungeKuttaMethods import RungeKutta
+from cfdpy.integrate.RungeKuttaMethods import RungeKutta
 
 
 class lowStorageRungeKutta(RungeKutta):
     """Base class for low-storage Runge-Kutta methods.
 
-    This uses the Williamson's 2N-storage scheme [1]_.
+    This uses Williamson's 2N-storage scheme [1]_.
 
     References:
     .. [1] J.H Williamson, "Low-storage Runge-Kutta schemes", 1980.
@@ -54,7 +54,7 @@ class lowStorageRungeKutta(RungeKutta):
 class LSRK2(lowStorageRungeKutta):
     """Low-storage Runge-Kutta method of order 2.
 
-    This uses the Williamson's 2N-storage scheme [1]_.
+    This uses Williamson's 2N-storage scheme [1]_.
     The Butcher Table is from Table I Case no.2 [1]_.
 
     Attributes:
@@ -77,7 +77,7 @@ class LSRK2(lowStorageRungeKutta):
 class LSRK3(lowStorageRungeKutta):
     """Low-storage Runge-Kutta method of order 3.
 
-    This uses the Williamson's 2N-storage scheme [1]_.
+    This uses Williamson's 2N-storage scheme [1]_.
     The Butcher Table is from Table I Case no.7 [1]_.
 
     Attributes:

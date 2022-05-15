@@ -1,6 +1,6 @@
 import numpy as np
 
-from integrate.lowStorageRungeKuttaMethods import LSRK3
+from cfdpy.integrate.lowStorageRungeKuttaMethods import LSRK3
 
 class channel(object):
     """_summary_

@@ -19,7 +19,7 @@ class spectralMethod1(object):
     Attributes:
         k (np.array): Wave Numbers.
         pad_width (int): Number of values padded to the edges of the specified axis.
-    """    
+    """
     def __init__(self, n:int, d=1., axis=-1, norm='forward'):
         self.n = n
         self.d = d
