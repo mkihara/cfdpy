@@ -10,11 +10,14 @@ from cfdpy.derivative.spectralMethods import spectralMethod1
 def target_u(x):
     return np.sin(x) + np.sin(4*x) + 1.
 
+
 def exact_du(x):
     return np.cos(x) + 4*np.cos(4*x)
 
+
 def exact_ddu(x):
     return - np.sin(x) - 16*np.sin(4*x)
+
 
 def test_finiteDifferenceMethods():
     nx = 64
@@ -43,6 +46,7 @@ def test_finiteDifferenceMethods():
     np.allclose(a=ufdm1(f=u, derivative=2, h=dx), b=ddu)
     np.allclose(a=ufdm3(f=u, derivative=2, h=dx), b=ddu)
     np.allclose(a=ufdm5(f=u, derivative=2, h=dx), b=ddu)
+
 
 def test_spectralMethods():
     nx = 64

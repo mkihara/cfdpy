@@ -26,7 +26,7 @@ class advection(object):
         spectralMethod = spectralMethod1(n=self.nx, d=self.dx)
         self.du_dx = spectralMethod.diff_phys
 
-        self.integrate = integrate
+        self.integrate = integrate()
 
     def rhs(self, t, u):
         return - self.c * self.du_dx(u)
