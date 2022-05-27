@@ -1,2 +1,4 @@
-numpy >= 1.22
-scipy >= 1.7
+numpy
+scipy
+matplotlib
+jupyter-book

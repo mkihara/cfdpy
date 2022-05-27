@@ -27,7 +27,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install jupyter-book matplotlib numpy
+        pip install -r requirements.txt
 
     # Build the book
     - name: Build the book
