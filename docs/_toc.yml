@@ -1,0 +1,21 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+parts:
+  - caption: Tutorials
+    numbered: True # Only applies to chapters in Part 1.
+    chapters:
+    - file: tutorials/1_Advection_Equation
+    - file: tutorials/2_Burgers_Equation
+    - file: tutorials/3_Poisson_Equation
+  - caption: Methods
+    chapters:
+    - file: methods/fractionalStepMethod
+    - file: methods/backwardEuler
+    - file: methods/CrankNicolson
+    - file: methods/lowStorageRungeKutta
+  - caption: API References
+    chapters:
+    - file: _autosummary/cfdpy

@@ -16,7 +16,7 @@ There are already some usefull packages for scientific computing with Python, su
 * [SciPy](https://scipy.org/)
 
 Based on these packages, CFDPy has implemented some additional features for CFD.
-CFDPy is different from the previous packages in the following ways:
+CFDPy is different from the above packages in the following ways:
 
 1. CFDPy's ODE solvers accepts multidimensional arrays and adopts faster (low-accuracy) methods.
 2. CFDPy's derivative algorithm supports higher order differentials and accuracy.

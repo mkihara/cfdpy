@@ -2,7 +2,7 @@ import numpy as np
 
 
 def wallNormalGrid(num:int, eta=1., delta=1.):
-    """The non-uniformly spaced grid for the wall-normal direction [1]_.
+    """The non-uniformly spaced grid for the wall-normal direction `[1]`_.
     
     Args:
         num (int): Number of grids to generate.
@@ -12,8 +12,8 @@ def wallNormalGrid(num:int, eta=1., delta=1.):
     Returns:
         np.array: Non-uniformly spaced grid.
 
-    .. [1] [Lee and Moser, "Direct numerical simulation of turbulent channel flow up to Ret=5200", 2015.](https://arxiv.org/abs/1410.7809)
-    """    
+    .. _[1] [Lee and Moser, "Direct numerical simulation of turbulent channel flow up to Ret=5200", 2015.](https://arxiv.org/abs/1410.7809)
+    """
     zeta = np.linspace(start=-1., stop=1., num=num)
     return delta * np.sin(eta*zeta*np.pi*0.5) / np.sin(eta*np.pi*0.5)
 
