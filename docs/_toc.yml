@@ -16,6 +16,14 @@ parts:
     - file: methods/backwardEuler
     - file: methods/CrankNicolson
     - file: methods/lowStorageRungeKutta
-  - caption: API References
+  - caption: API reference
     chapters:
-    - file: _autosummary/cfdpy
+    - file: api/cfdpy
+      sections:
+      - file: api/cfdpy.advection
+      - file: api/cfdpy.burgers
+      - file: api/cfdpy.poisson
+      - file: api/cfdpy.derivative.finiteDifferenceMethods
+      - file: api/cfdpy.derivative.spectralMethods
+      - file: api/cfdpy.integrate.RungeKuttaMethods
+      - file: api/cfdpy.integrate.lowStorageRungeKuttaMethods

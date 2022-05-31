@@ -39,10 +39,6 @@ launch_buttons:
 
 sphinx:
   extra_extensions:
+  - 'sphinx.ext.autodoc'
   - 'sphinx.ext.napoleon'
   - 'sphinx.ext.viewcode'
-  - 'sphinx.ext.autodoc'
-  - 'sphinx.ext.autosummary'
-  config:
-    add_module_names: False
-    autosummary_generate: True
